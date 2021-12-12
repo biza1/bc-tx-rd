@@ -40,7 +40,7 @@ function keepAlive() {
     try
     {
       let xhr = new XMLHttpRequest();
-      xhr.open('POST', "https://fortune-shining-saturnalia.glitch.me", true);
+      xhr.open('POST', "", true);
       xhr.send(null);
     } catch {}
   }, 120000);
