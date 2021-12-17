@@ -41,7 +41,7 @@ module.exports = {
             return await msg.lineReply(`❌ Vui lòng cung cấp một số nguyên dương`);
 
         amount = Number(amount);
-        value = getRandomInt(0, amount + 1);
+        let value = getRandomInt(0, amount + 1);
         if(msg.client.setrd.has(msg.author.id))
         {
             value = msg.client.setrd.get(msg.author.id);
